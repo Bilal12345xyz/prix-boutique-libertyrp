@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -72,7 +72,6 @@
             z-index: -2;
         }
 
-        /* AJOUT POUR AGRANDIR SEULEMENT LES CASES CATEGORIES AU SURVOL */
         .category-card {
             transition: transform 0.3s ease;
             position: relative;
@@ -90,16 +89,13 @@
     <div class="cityscape"></div>
 
     <div class="relative max-w-4xl w-full glass-card overflow-hidden">
-
-        <!-- Decorative background image behind the card -->
         <div class="absolute inset-0 z-[-1] flex justify-center items-center pointer-events-none">
-             
-            <img src="https://i.imgur.com/REReOCJ.jpeg" alt="Décor behind card" class="w-full max-w-4xl opacity-20 blur-sm object-contain" />
+            <img src="https://i.imgur.com/REReOCJ.jpeg" alt="Décor" class="w-full max-w-4xl opacity-20 blur-sm object-contain" />
         </div>
 
-        <img src="https://i.imgur.com/IRmZLjj.jpeg" alt="Liberty RP Logo" class="absolute top-4 right-4 w-16 h-16 object-contain rounded-full" />
-        <img src="https://i.imgur.com/Fqbt0eC.png" alt="Liberty RP Logo" class="absolute top-4 left-4 w-16 h-16 object-contain" />
-        <img src="https://i.imgur.com/oXgAtY5.png" alt="Character" class="absolute -right-10 bottom-0 w-60 h-60 object-contain hidden md:block" />
+        <img src="https://i.imgur.com/IRmZLjj.jpeg" alt="Logo" class="absolute top-4 right-4 w-16 h-16 object-contain rounded-full" />
+        <img src="https://i.imgur.com/Fqbt0eC.png" alt="Logo Gauche" class="absolute top-4 left-4 w-16 h-16 object-contain" />
+        <img src="https://i.imgur.com/oXgAtY5.png" alt="Personnage" class="absolute -right-10 bottom-0 w-60 h-60 object-contain hidden md:block" />
 
         <div class="p-8 md:p-12">
             <h1 class="text-5xl font-extrabold text-center mb-10 gradient-text tracking-wide">
@@ -108,13 +104,12 @@
             </h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Coins Section -->
+                <!-- Coins -->
                 <div class="bg-white/10 rounded-xl p-6 category-card">
                     <div class="flex items-center mb-6">
                         <div class="coins-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
                         <h2 class="ml-3 text-2xl font-bold text-white">Liberty Coins</h2>
                     </div>
-
                     <ul class="space-y-4">
                         <li class="flex items-center justify-between bg-gradient-to-r from-purple-900/30 to-blue-900/30 p-4 rounded-xl border border-purple-500/20">
                             <span class="text-white font-medium text-lg">1000 Liberty Coins</span>
@@ -144,36 +139,33 @@
                     </ul>
                 </div>
 
-                <!-- VIP Section -->
+                <!-- VIP -->
                 <div class="bg-white/10 rounded-xl p-6 category-card">
                     <div class="flex items-center mb-6">
                         <div class="vip-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
                         <h2 class="ml-3 text-2xl font-bold text-white">Abonnement VIP</h2>
                     </div>
-
                     <div class="bg-gradient-to-r from-amber-500/30 to-red-500/30 p-4 rounded-xl border border-amber-400/20 mb-8">
                         <div class="text-center">
                             <span class="text-white text-2xl font-bold">7,99 €</span>
                             <span class="text-amber-200 text-sm">/mois</span>
                         </div>
                     </div>
-
                     <ul class="space-y-3 text-white">
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Accès VIP 30 jours</span></li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Avantages Exclusifs</span></li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Véhicule Offert/mois</span></li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Accès peds</span></li>
-                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>skin d'armes</span></li>
+                        <li class="flex items-start">✔️ Accès VIP 30 jours</li>
+                        <li class="flex items-start">✔️ Avantages Exclusifs</li>
+                        <li class="flex items-start">✔️ Véhicule Offert/mois</li>
+                        <li class="flex items-start">✔️ Accès peds</li>
+                        <li class="flex items-start">✔️ skin d'armes</li>
                     </ul>
                 </div>
 
-                <!-- MainTeam Section -->
+                <!-- MainTeam -->
                 <div class="bg-white/10 rounded-xl p-6 category-card">
                     <div class="flex items-center mb-6">
                         <div class="mainteam-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
                         <h2 class="ml-3 text-2xl font-bold text-white">MainTeam</h2>
                     </div>
-
                     <ul class="space-y-4">
                         <li class="flex justify-between items-center bg-black/20 p-4 rounded-lg border border-blue-500/30">
                             <div>
@@ -208,11 +200,10 @@
                             <span class="text-green-300 font-bold text-lg">125 €</span>
                         </li>
                     </ul>
-
                     <p class="text-sm text-gray-300 mt-4">⚠️ Toutes les permissions sont permanentes mais peuvent être retirées en cas d'abus. Accès soumis au respect des règles du serveur.</p>
                 </div>
 
-                <!-- BusinessTeam Section -->
+                <!-- Business Team -->
                 <div class="bg-white/10 rounded-xl p-6 category-card">
                     <div class="flex items-center mb-6">
                         <div class="text-white bg-gradient-to-r from-red-600 to-black px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
@@ -252,8 +243,6 @@
                             </ul>
                         </li>
                     </ul>
-
-                    
                 </div>
             </div>
         </div>
