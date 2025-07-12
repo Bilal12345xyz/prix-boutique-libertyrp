@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prix Boutique Liberty RP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 42px 0 rgba(31, 38, 135, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .vip-badge {
+            background: linear-gradient(90deg, #f59e0b 0%, #ef4444 100%);
+        }
+
+        .coin-badge {
+            background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+        }
+
+        .mainteam-badge {
+            background: linear-gradient(90deg, #e8e8e8 0%, #ff0095 100%);
+        }
+
+        .coins-badge {
+            background: linear-gradient(90deg, #a855f7 0%, #6366f1 100%);
+        }
+
+        .cityscape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-size: cover;
+            background-position: bottom;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .pink-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+            z-index: -2;
+        }
+
+        /* AJOUT POUR AGRANDIR SEULEMENT LES CASES CATEGORIES AU SURVOL */
+        .category-card {
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 0;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="pink-overlay"></div>
+    <div class="cityscape"></div>
+
+    <div class="relative max-w-4xl w-full glass-card overflow-hidden">
+
+        <!-- Decorative background image behind the card -->
+        <div class="absolute inset-0 z-[-1] flex justify-center items-center pointer-events-none">
+             
+            <img src="https://i.imgur.com/REReOCJ.jpeg" alt="Décor behind card" class="w-full max-w-4xl opacity-20 blur-sm object-contain" />
+        </div>
+
+        <img src="https://i.imgur.com/IRmZLjj.jpeg" alt="Liberty RP Logo" class="absolute top-4 right-4 w-16 h-16 object-contain rounded-full" />
+        <img src="https://i.imgur.com/Fqbt0eC.png" alt="Liberty RP Logo" class="absolute top-4 left-4 w-16 h-16 object-contain" />
+        <img src="https://i.imgur.com/oXgAtY5.png" alt="Character" class="absolute -right-10 bottom-0 w-60 h-60 object-contain hidden md:block" />
+
+        <div class="p-8 md:p-12">
+            <h1 class="text-5xl font-extrabold text-center mb-10 gradient-text tracking-wide">
+                <span class="drop-shadow-[0_2px_4px_rgba(236,72,153,0.4)]">Prix Boutique</span>
+                <span class="block text-3xl mt-2">Prix Boutique | Liberty RP</span>
+            </h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Coins Section -->
+                <div class="bg-white/10 rounded-xl p-6 category-card">
+                    <div class="flex items-center mb-6">
+                        <div class="coins-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
+                        <h2 class="ml-3 text-2xl font-bold text-white">Liberty Coins</h2>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between bg-gradient-to-r from-purple-900/30 to-blue-900/30 p-4 rounded-xl border border-purple-500/20">
+                            <span class="text-white font-medium text-lg">1000 Liberty Coins</span>
+                            <span class="text-pink-300 font-bold text-xl">7,99 €</span>
+                        </li>
+                        <li class="flex items-center justify-between bg-black/20 p-3 rounded-lg">
+                            <div>
+                                <span class="text-white font-medium">2000 Liberty Coins</span>
+                                <span class="block text-xs text-green-300">Bonus de 200 Liberty Coins</span>
+                            </div>
+                            <span class="text-purple-300 font-bold">15,99 €</span>
+                        </li>
+                        <li class="flex items-center justify-between bg-black/20 p-3 rounded-lg">
+                            <div>
+                                <span class="text-white font-medium">3000 Liberty Coins</span>
+                                <span class="block text-xs text-green-300">Bonus de 300 Liberty Coins</span>
+                            </div>
+                            <span class="text-purple-300 font-bold">22,99 €</span>
+                        </li>
+                        <li class="flex items-center justify-between bg-black/20 p-3 rounded-lg">
+                            <div>
+                                <span class="text-white font-medium">5000 Liberty Coins</span>
+                                <span class="block text-xs text-green-300">Bonus de 500 Liberty Coins</span>
+                            </div>
+                            <span class="text-purple-300 font-bold">35,99 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- VIP Section -->
+                <div class="bg-white/10 rounded-xl p-6 category-card">
+                    <div class="flex items-center mb-6">
+                        <div class="vip-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
+                        <h2 class="ml-3 text-2xl font-bold text-white">Abonnement VIP</h2>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-amber-500/30 to-red-500/30 p-4 rounded-xl border border-amber-400/20 mb-8">
+                        <div class="text-center">
+                            <span class="text-white text-2xl font-bold">7,99 €</span>
+                            <span class="text-amber-200 text-sm">/mois</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 text-white">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Accès VIP 30 jours</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Avantages Exclusifs</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Véhicule Offert/mois</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Accès peds</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>skin d'armes</span></li>
+                    </ul>
+                </div>
+
+                <!-- MainTeam Section -->
+                <div class="bg-white/10 rounded-xl p-6 category-card">
+                    <div class="flex items-center mb-6">
+                        <div class="mainteam-badge text-white px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
+                        <h2 class="ml-3 text-2xl font-bold text-white">MainTeam</h2>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center bg-black/20 p-4 rounded-lg border border-blue-500/30">
+                            <div>
+                                <span class="text-white font-bold">MainTeam Bleu</span>
+                                <p class="text-sm text-blue-200">Le pack de base</p>
+                                <p class="text-sm text-blue-200 font-bold">Permission Bleu IG</p>
+                            </div>
+                            <span class="text-blue-300 font-bold text-lg">25 €</span>
+                        </li>
+                        <li class="flex justify-between items-center bg-black/20 p-4 rounded-lg border border-yellow-500/30">
+                            <div>
+                                <span class="text-yellow-300 font-bold">MainTeam Jaune</span>
+                                <p class="text-sm text-yellow-200">Plus de libertés et d'accès</p>
+                                <p class="text-sm text-yellow-200 font-bold">Permission Jaune IG</p>
+                            </div>
+                            <span class="text-yellow-300 font-bold text-lg">50 €</span>
+                        </li>
+                        <li class="flex justify-between items-center bg-black/20 p-4 rounded-lg border border-orange-500/30">
+                            <div>
+                                <span class="text-orange-400 font-bold">MainTeam Orange</span>
+                                <p class="text-sm text-orange-200">Encore plus de possibilités</p>
+                                <p class="text-sm text-orange-200 font-bold">Permission Orange IG</p>
+                            </div>
+                            <span class="text-orange-300 font-bold text-lg">95 €</span>
+                        </li>
+                        <li class="flex justify-between items-center bg-black/20 p-4 rounded-lg border border-green-500/30">
+                            <div>
+                                <span class="text-green-300 font-bold">MainTeam Verte</span>
+                                <p class="text-sm text-green-200">Accès avancé aux fonctionnalités serveur</p>
+                                <p class="text-sm text-green-200 font-bold">Permission Verte IG</p>
+                            </div>
+                            <span class="text-green-300 font-bold text-lg">125 €</span>
+                        </li>
+                    </ul>
+
+                    <p class="text-sm text-gray-300 mt-4">⚠️ Toutes les permissions sont permanentes mais peuvent être retirées en cas d'abus. Accès soumis au respect des règles du serveur.</p>
+                </div>
+
+                <!-- BusinessTeam Section -->
+                <div class="bg-white/10 rounded-xl p-6 category-card">
+                    <div class="flex items-center mb-6">
+                        <div class="text-white bg-gradient-to-r from-red-600 to-black px-4 py-1 rounded-full text-sm font-semibold">Catégorie</div>
+                        <h2 class="ml-3 text-2xl font-bold text-white">Business Team</h2>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="bg-gradient-to-r from-red-900/30 to-rose-800/30 p-4 rounded-lg border border-red-500/30">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-red-400 font-bold">Business Team Rouge</span>
+                                    <p class="text-sm text-red-200">Avantages économiques exclusifs</p>
+                                </div>
+                                <span class="text-red-300 font-bold text-lg">165 €</span>
+                            </div>
+                            <ul class="mt-2 text-sm text-gray-300 list-disc pl-5 space-y-1">
+                                <li>1 véhicule boutique offert</li>
+                                <li>2 armes boutique offertes</li>
+                                <li>1 200 Liberty Coins / mois</li>
+                                <li class="font-bold">Permission Rouge IG</li>
+                            </ul>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-gray-900/70 via-gray-800/50 to-black/70 p-4 rounded-lg border border-gray-500/50">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-gray-100 font-bold">Business Team Noir</span>
+                                    <p class="text-sm text-gray-300">Niveau supérieur</p>
+                                </div>
+                                <span class="text-gray-200 font-bold text-lg">225 €</span>
+                            </div>
+                            <ul class="mt-2 text-sm text-gray-300 list-disc pl-5 space-y-1">
+                                <li>2 véhicules boutique offerts</li>
+                                <li>3 armes boutique offertes</li>
+                                <li>1 500 Liberty Coins / mois</li>
+                                <li class="font-bold">Permission Noir IG</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
